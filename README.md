@@ -1,1 +1,2 @@
 # Rock_Paper_Scissors
+I am on the fundamentals of the 'Odin Project' and here I will be attempting to create the code for a rock paper scissors game. I indend to use the puesdo code theory to get the ideas into the comments and then code the computer to understand the comments. Hope you find this enjoyable to look at.
