@@ -7,6 +7,52 @@
 </head>
 <body>
     <script>
+
+//Game is going to play against computer
+
+//create function that is called "computerPlay" that will randomly return either rock paper or scissors.
+const choices = ["rock", "paper", "scissors"];
+let playerSelection = "rock";
+let computerSelection = computerPlay();
+
+
+
+function  computerPlay() {
+        return choices[~~(Math.random() * choices.length)];
+        
+    }
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection == computerSelection) {
+        alert("tied")
+    }else{
+        alert("win")
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 Rock paper scissors
         Need three choices Rock, Paper, Scissors
@@ -30,45 +76,95 @@ Human vs Computer
 */
 
 
+/*
+let r = r > s;
+let s = s > p;
+let p = p > r;
+*/
+
+
+
+
+
+
 
 
 /*
-let r = "Rock"
-let s = "Scissors"
-let p = "Paper"
-*/
-let playerInput = prompt("Please pick either Rock, Paper, or Scissors")
+function getRandomInt() {
+  return Math.floor(Math.random()*3);
 
-
-let choices = ["rock", "paper", "scissors"];
-
-
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-        
 }
 
 
 
 function computerPlay() {
+   let choices = ["rock", "paper", "scissors"];
 
     //need to take random number selected and pull its position in the array.
-    num = getRandomInt(3);
-    computerSelection = choices[num];
-    console.log(computerSelection);
+    let num = getRandomInt();
+    let compChoice = choices[num];
+    console.log(compChoice);
+    return compChoice
 }
+  
+//let playerInput = prompt("Please pick either Rock, Paper, or Scissors")
 
 
 
-function playerSelection(val) {
 
-   val = playerInput;
-   console.log (playerSelection());
-   
-}
-        
-    
+
+
+
+const playerSelection = "rock";
+
+
+
+ 
+
+function playRound(playerSelection, computerPlay) {
+
+
+    if (computerPlay == "toast") {
+        alert("you barf");
+    }
+    else if (computerPlay == "scissors") {
+        alert("you win");
+        console.log(playRound(playerSelection, computerPlay));
+    }
+}   
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*    
+switch (playRound(playerInput, computerPlay)) {
+    //need to bring playInput and computerPlay on same line
+    //need to compare both answers
+case playerInput == "rock" && computerPlay == "paper": 
+    alert("you lose")
+    break;
+  
+case playerInput == "rock" && computerPlay == "rock":
+    alert("you tie");
+    break;
+  
+case playerInput == "rock" && computerPlay == "scissors":
+    alert("you win");
+    break;
+} 
+
+*/
 
 
 
