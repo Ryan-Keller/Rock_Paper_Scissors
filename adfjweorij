@@ -1,0 +1,35 @@
+[33mcommit 423fbc7cf5395c58e9fe7ba3dfe67c4ccc6900d9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Ryan Keller <rjkeller_01@hotmail.com>
+Date:   Thu Feb 4 20:16:36 2021 -0700
+
+    took out playerInput in order to just test one player choice against the random computer choice. Only tie or win is tested and working. Ask Jon why computerPlay returned a string now and undifined earlier. Might have to look back at old version to explain better.
+
+[33mcommit 2eae242e46764cee1258bd2f176251f65bb744fb[m
+Author: Ryan Keller <rjkeller_01@hotmail.com>
+Date:   Wed Feb 3 13:48:41 2021 -0700
+
+    was able to get user input box working
+
+[33mcommit 056e6df09437286bf31171ae79048b73e4478707[m
+Author: Ryan Keller <rjkeller_01@hotmail.com>
+Date:   Wed Feb 3 12:46:26 2021 -0700
+
+    cleaned up the code a bit before moving on to player\'s choice
+
+[33mcommit 7a6de91e76d4abebb4898ddf3931aad796eb3f10[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ryan Keller <rjkeller_01@hotmail.com>
+Date:   Wed Feb 3 12:40:37 2021 -0700
+
+    Finished making the computer pick a random choice of rock paper or scissors.
+
+[33mcommit f9a10333b2469916778bff4d4f8eea2c6dc21c5c[m
+Author: Ryan Keller <rjkeller_01@hotmail.com>
+Date:   Wed Feb 3 10:02:54 2021 -0700
+
+    initial commit of rock paper scissors
+
+[33mcommit 481f6abfc0fef0043a4c69984928f967fc0a9291[m
+Author: Ryan-Keller <77871026+Ryan-Keller@users.noreply.github.com>
+Date:   Wed Feb 3 09:56:40 2021 -0700
+
+    Initial commit

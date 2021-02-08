@@ -12,7 +12,7 @@
 
 //create function that is called "computerPlay" that will randomly return either rock paper or scissors.
 const choices = ["rock", "paper", "scissors"];
-let playerSelection = "rock";
+let playerSelection = "paper";
 let computerSelection = computerPlay();
 
 
@@ -22,19 +22,45 @@ function  computerPlay() {
         
     }
 
+
+// write a function that plays a single round of "RPS"
+
+// flush out the playRound() to take account for all game outcomes 
+
+
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
-        alert("tied")
-    }else{
-        alert("win")
+         alert("tied");
+    }   
+        else if (computerSelection == "scissors" && playerSelection == "rock"){
+         alert("win");
+       }
         
-    }
-    
+       else if (computerSelection == "scissors" && playerSelection == "paper") {
+        alert("lose");
+        }
+              
+       else if (computerSelection == "rock" && playerSelection == "scissors") {
+        alert("lose");
+        }
+        
+        else if (computerSelection == "rock" && playerSelection == "paper"){
+         alert("win");
+       }
+
+        else if (computerSelection == "paper" && playerSelection == "scissors"){
+         alert("win");
+       }
+       
+       else if (computerSelection == "paper" && playerSelection == "rock") {
+        alert("lose");
+       }
+        
+
+
+
+
 }
-
-
-
-
 
 
 
