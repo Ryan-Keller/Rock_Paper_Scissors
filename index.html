@@ -22,11 +22,11 @@
 //create function that is called "computerPlay" that will randomly return either rock paper or scissors.
 
 const choices = ["rock", "paper", "scissors"];
-let playerSelection = playerInput().toLowerCase();
+//let playerSelection = playerInput().toLowerCase();
 let computerSelection = computerPlay();
-
 let playerScore = 0;
 let computerScore = 0;
+
 
 function playerInput() {
     str = prompt("What do you choose? rock, paper, or scissors?")
@@ -84,19 +84,34 @@ function playRound(playerSelection, computerSelection) {
        
 }   
 
-console.log(playRound(playerSelection, computerSelection))
+ //console.log(playRound(playerSelection, computerSelection))
 
-/*function game() {
-    playerInput();
-    playRound(playerSelection, computerSelection);
-    playerInput();
-    playRound(playerSelection, computerSelection);
-    playerInput();
-    playRound(playerSelection, computerSelection);
-    playerInput();
-    playRound(playerSelection, computerSelection);
+function game() {
+
         
-}*/
+    while (playerScore < 3 && computerScore < 3) {
+        playerSelection = playerInput();
+        computerSelection = computerPlay();
+
+    
+        playRound(playerSelection, computerSelection);
+
+    }
+    if (playerScore > computerScore) {
+        alert("huzzah, you win!")
+    }else {
+        alert('boo shiesty')
+    }
+
+}
+
+game()
+
+/*while (condition) {
+    code
+}
+*/
+
 
 //added the playerInupt back into the game
 
